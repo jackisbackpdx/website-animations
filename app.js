@@ -54,6 +54,7 @@ function quirkAnimation() {
     let stringToNumber = parseInt(quirk.style.top);
     
     if (stringToNumber === randomRange) {
+        let randomNumber1;
         randomNumber1 = Math.floor(Math.random() * 12);
         let randomNumber2 = Math.floor(Math.random() * 5);
         randomRange = possibleRanges[randomNumber1];
@@ -79,20 +80,8 @@ function quirkAnimation() {
         stringToNumber -= randomSpeed;
         quirk.style.top = stringToNumber + 'px';
     }
-
-
-        console.log(stringToNumber);
-        console.log(randomSpeed);
-        console.log(randomRange);
-    
     requestAnimationFrame(quirkAnimation);
     
 }
 
 quirkAnimation();
-
-let randomNumber1 = Math.floor(Math.random() * 12);
-let randomNumber2 = Math.floor(Math.random() * 5);
-
-console.log(randomNumber1);
-console.log(randomNumber2);
