@@ -1,5 +1,4 @@
 * {
-    overflow: hidden;
     margin: none;
 }
 
@@ -10,9 +9,11 @@ html {
 
 body {
     width: 100%;
-    height: 100%;
+    height: 2000px;
     margin: 0;
     background-color: red;
+    display: flex;
+    justify-content: center;
 }
 
 #diagonal-1 {
@@ -47,14 +48,30 @@ body {
 
 main {
     height: 150px;
-    width: 50%;
+    width: 55%;
     margin: 0 auto;
-    top: 35%;
+    top: 20px;
     background-color: white;
     z-index: 1;
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+article {
+    display: flex;
+    margin: 0;
+    justify-content: space-around;
+    width: 100%;
+}
+
+h2 {
+    border: 2px solid black;
+    padding: 5px;
+    display: flex;
+    align-items: center;
 }
 
 #quirk {
@@ -64,4 +81,45 @@ main {
     transform: rotate(-15deg);
     position: absolute;
     left: -50px;
+}
+
+article div:nth-of-type(1) {
+    border: 4px solid black;
+    height: 3rem;
+    width: 115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article div:nth-of-type(2) {
+    border: 4px solid black;
+    height: 3rem;
+    width: 152px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article div:nth-of-type(3) {
+    border: 4px solid black;
+    height: 3rem;
+    width: 129px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article div:hover {
+    background-color: grey;
+    cursor: pointer;
+}
+
+article div:hover h2 {
+    background-color: white;
+    cursor: pointer;
+}
+
+img {
+    position: absolute;
 }
